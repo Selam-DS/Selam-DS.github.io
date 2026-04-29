@@ -1,112 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Selam Saleh | Data Portfolio</title>
-  <meta name="description" content="Aspiring Data Scientist with experience in Python, SQL, and machine learning. Building projects in predictive modeling, analytics, and data visualization." />
+<title>Selam Saleh | Data Portfolio</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" />
-  <link rel="stylesheet" href="./style/style.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f5f5f5;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+/* NAVBAR */
+.navbar a {
+  text-decoration: none;
+  color: #ff4d6d;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  margin-top: 80px;
+}
+
+.intro {
+  font-size: 18px;
+}
+
+.name {
+  font-size: 70px;
+  font-weight: 700;
+  color: #ff4d6d;
+  line-height: 1.1;
+}
+
+.role {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.highlight {
+  color: #ff4d6d;
+}
+
+.profile-img {
+  width: 260px;
+  border-radius: 20px;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  color: #ff4d6d;
+  margin-top: 60px;
+  font-weight: 600;
+}
+
+/* PROJECTS */
+.project {
+  margin-top: 20px;
+}
+
+.project a {
+  color: #ff4d6d;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact a {
+  color: #ff4d6d;
+  text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<div class="container mb-5">
-  <div class="row justify-content-center mt-4">
-    <div class="col-3 text-center"><a href="#about">ABOUT</a></div>
-    <div class="col-3 text-center"><a href="#Projects">PROJECTS</a></div>
-    <div class="col-3 text-center"><a href="#skills">SKILLS</a></div>
-    <div class="col-3 text-center"><a href="#contact">CONTACT</a></div>
+<div class="container navbar mt-4">
+  <div class="row text-center">
+    <div class="col"><a href="#about">ABOUT</a></div>
+    <div class="col"><a href="#projects">PROJECTS</a></div>
+    <div class="col"><a href="#skills">SKILLS</a></div>
+    <div class="col"><a href="#contact">CONTACT</a></div>
   </div>
 </div>
 
 <!-- HERO -->
-<div class="container text-center">
-  <h1 class="fw-bold mt-2">YOUR NAME</h1>
-  <p class="mt-3">
-    Aspiring Data Scientist focused on Python, SQL, and machine learning
-  </p>
+<div class="container hero">
+  <div class="row align-items-center">
+
+    <div class="col-md-6">
+      <p class="intro">Hello it's me!</p>
+
+      <h1 class="name">
+        SELAM SALEH
+      </h1>
+
+      <h3 class="role">
+        I am <span class="highlight">a Data Analyst with a focus on Data Science</span>
+      </h3>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="https://via.placeholder.com/250" class="profile-img">
+    </div>
+
+  </div>
 </div>
 
 <!-- BIO -->
 <div class="container mt-5">
   <p class="fs-4 text-center">
-    Data science graduate with hands-on experience in Python, SQL, and machine learning. 
+    Data science and Analytics graduate with hands-on experience in Python, SQL, R and machine learning. 
     I build projects in predictive modeling and data analysis to uncover insights and solve real-world problems.
   </p>
 </div>
 
-<hr />
+<hr>
 
 <!-- ABOUT -->
-<div class="container mt-5">
-  <h2 id="about" class="text-center">ABOUT</h2>
-  <p class="text-center mt-4">
-    I recently completed a Data Science and Analytics program where I developed strong foundations in data analysis, 
-    machine learning, and data visualization. Through hands-on projects, I have worked with real datasets to build predictive models 
-    and uncover insights.
+<div class="container">
+  <h2 id="about" class="section-title">ABOUT</h2>
+  <p class="fs-3 mt-4 text-center txt-color">
+  I recently completed the Honours Bachelor of Data Science and Analytics, where I developed a strong foundation in data analysis, machine learning, statistics, and computer science. The program emphasized building data-driven solutions, applying advanced algorithms, and using AI techniques to solve real-world problems.
 
-    I am currently focused on strengthening my Python and SQL skills, building real-world projects, and working toward a full-time 
-    role in data science or analytics.
-  </p>
+  Through coursework in machine learning, predictive analytics, data mining, and data visualization, I gained hands-on experience working with complex datasets and extracting meaningful insights. I also developed practical skills in database design, programming, and business intelligence, allowing me to approach problems from both a technical and strategic perspective.
+
+  In addition, I completed advanced training in data analytics tools and cloud technologies, further strengthening my ability to work with modern data platforms.
+
+  I am currently focused on continuing to build real-world projects and pursuing opportunities in data science and analytics where I can apply my skills to deliver impactful, data-driven solutions.
+</p>
 </div>
 
-<hr />
+<hr>
 
 <!-- PROJECTS -->
-<div class="container mt-5">
-  <h2 id="Projects" class="text-center">PROJECTS</h2>
+<div class="container">
+  <h2 id="projects" class="section-title">PROJECTS</h2>
 
-  <div class="mt-4">
+  <div class="project">
     <h4>Bank Churn Prediction</h4>
-    <p>
-      Built a machine learning model to predict customer churn and identify key factors affecting retention.
-    </p>
+    <p>Built a machine learning model to predict customer churn and identify key risk factors.</p>
     <a href="https://github.com/yourusername/churn-project" target="_blank">View Project</a>
   </div>
 
-  <div class="mt-4">
+  <div class="project">
     <h4>Melanoma Classification</h4>
-    <p>
-      Developed a deep learning model to classify skin lesions and support early melanoma detection.
-    </p>
+    <p>Developed a deep learning model to classify skin lesions for early detection.</p>
     <a href="https://github.com/yourusername/melanoma-project" target="_blank">View Project</a>
   </div>
 
-  <div class="mt-4">
+  <div class="project">
     <h4>Data Dashboard (Coming Soon)</h4>
-    <p>
-      Interactive dashboard analyzing real-world data with key insights and visualizations.
-    </p>
+    <p>Interactive dashboard analyzing real-world data with insights and visualizations.</p>
   </div>
 </div>
 
-<hr />
+<hr>
 
 <!-- SKILLS -->
-<div class="container mt-5">
-  <h2 id="skills" class="text-center">SKILLS</h2>
+<div class="text-center mt-4">
 
-  <div class="text-center mt-4">
-    <p><strong>Languages:</strong> Python, SQL, R</p>
-    <p><strong>Libraries:</strong> pandas, NumPy, scikit-learn</p>
-    <p><strong>Tools:</strong> Power BI / Tableau, Git</p>
-  </div>
+  <p><strong>Languages:</strong> Python, SQL, R</p>
+
+  <p><strong>Data Analysis & Machine Learning:</strong> 
+    Data Cleaning, Exploratory Data Analysis (EDA), Predictive Modeling, Machine Learning, Data Mining
+  </p>
+
+  <p><strong>Libraries & Tools:</strong> 
+    pandas, NumPy, scikit-learn
+  </p>
+
+  <p><strong>Data Visualization:</strong> 
+    Matplotlib, Seaborn, Power BI / Tableau
+  </p>
+
+  <p><strong>Databases & Systems:</strong> 
+    Structured Database Design, SQL, Data Management
+  </p>
+
+  <p><strong>Additional Skills:</strong> 
+    Statistical Analysis, Business Intelligence, Data-Driven Decision Making, Cloud Technologies
+  </p>
+
 </div>
 
-<hr />
+<hr>
 
 <!-- CONTACT -->
-<div class="container mt-5 text-center">
-  <h2 id="contact">CONTACT</h2>
+<div class="container contact text-center mb-5">
+  <h2 id="contact" class="section-title">CONTACT</h2>
 
-  <p class="mt-3">
-    Email: <a href="mailto:your@email.com">your@email.com</a>
-  </p>
+  <p>Email: <a href="mailto:selam.saleh098@gmail.com">selam.saleh098@email.com</a></p>
 
   <p>
     <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
