@@ -55,7 +55,7 @@ body {
   color: #ff4d6d;
 }
 
-/* PROFILE IMAGE FIX */
+/* PROFILE IMAGE */
 .profile-img {
   width: 260px;
   height: 260px;
@@ -66,7 +66,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-/* SECTION TITLES */
+/* SECTION TITLE */
 .section-title {
   text-align: center;
   color: #ff4d6d;
@@ -85,8 +85,27 @@ body {
   font-weight: 600;
 }
 
-/* SKILLS */
-.skills-box h5 {
+/* SKILLS CARDS */
+.skill-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.skill-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skill-card h5 {
   color: #ff4d6d;
   font-weight: 600;
 }
@@ -122,7 +141,7 @@ body {
       <h1 class="name">SELAM SALEH</h1>
 
       <h3 class="role">
-        I am <span class="highlight">a Data Analyst with a focus on Data Science</span>
+        I am <span class="highlight">a Data Analyst focused on Data Science</span>
       </h3>
     </div>
 
@@ -136,8 +155,8 @@ body {
 <!-- BIO -->
 <div class="container mt-5">
   <p class="fs-5 text-center">
-    Data Science and Analytics graduate with hands-on experience in Python, SQL, R, and machine learning. 
-    I build projects in predictive modeling and data analysis to uncover insights and solve real-world problems.
+    Data Science and Analytics graduate with experience in Python, SQL, R, and machine learning.
+    I build end-to-end projects to extract insights and solve real-world problems.
   </p>
 </div>
 
@@ -148,11 +167,8 @@ body {
   <h2 id="about" class="section-title">ABOUT</h2>
 
   <p class="fs-5 mt-4 text-center">
-    I recently completed the Honours Bachelor of Data Science and Analytics, where I developed a strong foundation in data analysis, machine learning, statistics, and computer science. The program emphasized building data-driven solutions, applying advanced algorithms, and using AI techniques to solve real-world problems.
-    <br><br>
-    Through coursework in machine learning, predictive analytics, data mining, and data visualization, I gained hands-on experience working with complex datasets and extracting meaningful insights.
-    <br><br>
-    I am currently focused on building real-world projects and pursuing opportunities in data science and analytics.
+    I recently completed a Bachelor of Data Science and Analytics at Seneca Polytechnic.
+    My focus is on machine learning, data analysis, and building data-driven solutions.
   </p>
 </div>
 
@@ -164,19 +180,19 @@ body {
 
   <div class="project">
     <h4>Bank Churn Prediction</h4>
-    <p>Machine learning model to predict customer churn and identify key risk factors.</p>
+    <p>ML model predicting customer churn using classification techniques.</p>
     <a href="https://github.com/yourusername/churn-project" target="_blank">View Project</a>
   </div>
 
   <div class="project">
     <h4>Melanoma Classification</h4>
-    <p>Deep learning model for early skin cancer detection.</p>
+    <p>Deep learning model for medical image classification.</p>
     <a href="https://github.com/yourusername/melanoma-project" target="_blank">View Project</a>
   </div>
 
   <div class="project">
-    <h4>Data Dashboard (Coming Soon)</h4>
-    <p>Interactive dashboard with real-world insights and visualization.</p>
+    <h4>EDA Dashboard</h4>
+    <p>Interactive Power BI dashboard for data visualization and insights.</p>
   </div>
 </div>
 
@@ -186,31 +202,46 @@ body {
 <div class="container">
   <h2 id="skills" class="section-title">SKILLS</h2>
 
-  <div class="row text-center mt-4 skills-box">
+  <div class="row mt-4 g-4 text-center">
 
     <div class="col-md-4">
-      <h5><i class="bi bi-code-slash"></i> Languages</h5>
-      <p>Python, SQL, R</p>
-    </div>
-
-    <div class="col-md-4">
-      <h5><i class="bi bi-graph-up"></i> Data & ML</h5>
-      <p>EDA, Machine Learning, Predictive Modeling</p>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <h5>Programming</h5>
+        <p>Python, SQL, R</p>
+      </div>
     </div>
 
     <div class="col-md-4">
-      <h5><i class="bi bi-bar-chart"></i> Visualization</h5>
-      <p>Matplotlib, Seaborn, Power BI, Tableau</p>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h5>Data Science</h5>
+        <p>EDA, Feature Engineering, ML</p>
+      </div>
     </div>
 
-    <div class="col-md-6 mt-4">
-      <h5><i class="bi bi-database"></i> Databases</h5>
-      <p>SQL, Database Design, Data Management</p>
+    <div class="col-md-4">
+      <div class="skill-card">
+        <div class="skill-icon">📈</div>
+        <h5>Visualization</h5>
+        <p>Power BI, Tableau, Matplotlib</p>
+      </div>
     </div>
 
-    <div class="col-md-6 mt-4">
-      <h5><i class="bi bi-lightbulb"></i> Other</h5>
-      <p>Statistics, BI, Cloud Basics, Problem Solving</p>
+    <div class="col-md-6">
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <h5>Machine Learning</h5>
+        <p>Classification, Regression, Evaluation</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="skill-card">
+        <div class="skill-icon">🛠️</div>
+        <h5>Tools</h5>
+        <p>Git, Jupyter, Excel, Pipelines</p>
+      </div>
     </div>
 
   </div>
@@ -222,15 +253,11 @@ body {
 <div class="container text-center mt-5">
   <h2 class="section-title">RESUME</h2>
 
-  <p>View or download my resume below:</p>
+  <p>Click below to view my resume:</p>
 
-  <a href="Resume.pdf" target="_blank" class="btn btn-outline-danger">
-    Open Resume
+  <a href="Resume.pdf" target="_blank" class="btn btn-outline-danger btn-lg">
+    View Resume
   </a>
-
-  <div class="mt-3">
-    <iframe src="resume.pdf" width="100%" height="500px"></iframe>
-  </div>
 </div>
 
 <hr>
