@@ -6,14 +6,21 @@
 
 <title>Selam Saleh | Data Portfolio</title>
 
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- BOOTSTRAP -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- BOOTSTRAP ICONS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 <style>
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #f5f5f5;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  color: #222;
 }
 
 /* NAVBAR */
@@ -48,9 +55,15 @@ body {
   color: #ff4d6d;
 }
 
+/* PROFILE IMAGE FIX */
 .profile-img {
   width: 260px;
+  height: 260px;
+  object-fit: cover;
   border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* SECTION TITLES */
@@ -58,7 +71,7 @@ body {
   text-align: center;
   color: #ff4d6d;
   margin-top: 60px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* PROJECTS */
@@ -69,12 +82,20 @@ body {
 .project a {
   color: #ff4d6d;
   text-decoration: none;
+  font-weight: 600;
+}
+
+/* SKILLS */
+.skills-box h5 {
+  color: #ff4d6d;
+  font-weight: 600;
 }
 
 /* CONTACT */
 .contact a {
   color: #ff4d6d;
   text-decoration: none;
+  font-weight: 600;
 }
 </style>
 </head>
@@ -96,11 +117,9 @@ body {
   <div class="row align-items-center">
 
     <div class="col-md-6">
-      <p class="intro">Hello it's me!</p>
+      <p class="intro">Hello, it's me!</p>
 
-      <h1 class="name">
-        SELAM SALEH
-      </h1>
+      <h1 class="name">SELAM SALEH</h1>
 
       <h3 class="role">
         I am <span class="highlight">a Data Analyst with a focus on Data Science</span>
@@ -108,7 +127,7 @@ body {
     </div>
 
     <div class="col-md-6 text-center">
-      <img src="./profile.jpeg" class="profile-img">
+      <img src="profile.jpeg" class="profile-img" alt="Profile Photo">
     </div>
 
   </div>
@@ -116,8 +135,8 @@ body {
 
 <!-- BIO -->
 <div class="container mt-5">
-  <p class="fs-4 text-center">
-    Data science and Analytics graduate with hands-on experience in Python, SQL, R and machine learning. 
+  <p class="fs-5 text-center">
+    Data Science and Analytics graduate with hands-on experience in Python, SQL, R, and machine learning. 
     I build projects in predictive modeling and data analysis to uncover insights and solve real-world problems.
   </p>
 </div>
@@ -127,15 +146,14 @@ body {
 <!-- ABOUT -->
 <div class="container">
   <h2 id="about" class="section-title">ABOUT</h2>
-  <p class="fs-3 mt-4 text-center txt-color">
-  I recently completed the Honours Bachelor of Data Science and Analytics, where I developed a strong foundation in data analysis, machine learning, statistics, and computer science. The program emphasized building data-driven solutions, applying advanced algorithms, and using AI techniques to solve real-world problems.
 
-  Through coursework in machine learning, predictive analytics, data mining, and data visualization, I gained hands-on experience working with complex datasets and extracting meaningful insights. I also developed practical skills in database design, programming, and business intelligence, allowing me to approach problems from both a technical and strategic perspective.
-
-  In addition, I completed advanced training in data analytics tools and cloud technologies, further strengthening my ability to work with modern data platforms.
-
-  I am currently focused on continuing to build real-world projects and pursuing opportunities in data science and analytics where I can apply my skills to deliver impactful, data-driven solutions.
-</p>
+  <p class="fs-5 mt-4 text-center">
+    I recently completed the Honours Bachelor of Data Science and Analytics, where I developed a strong foundation in data analysis, machine learning, statistics, and computer science. The program emphasized building data-driven solutions, applying advanced algorithms, and using AI techniques to solve real-world problems.
+    <br><br>
+    Through coursework in machine learning, predictive analytics, data mining, and data visualization, I gained hands-on experience working with complex datasets and extracting meaningful insights.
+    <br><br>
+    I am currently focused on building real-world projects and pursuing opportunities in data science and analytics.
+  </p>
 </div>
 
 <hr>
@@ -146,49 +164,73 @@ body {
 
   <div class="project">
     <h4>Bank Churn Prediction</h4>
-    <p>Built a machine learning model to predict customer churn and identify key risk factors.</p>
+    <p>Machine learning model to predict customer churn and identify key risk factors.</p>
     <a href="https://github.com/yourusername/churn-project" target="_blank">View Project</a>
   </div>
 
   <div class="project">
     <h4>Melanoma Classification</h4>
-    <p>Developed a deep learning model to classify skin lesions for early detection.</p>
+    <p>Deep learning model for early skin cancer detection.</p>
     <a href="https://github.com/yourusername/melanoma-project" target="_blank">View Project</a>
   </div>
 
   <div class="project">
     <h4>Data Dashboard (Coming Soon)</h4>
-    <p>Interactive dashboard analyzing real-world data with insights and visualizations.</p>
+    <p>Interactive dashboard with real-world insights and visualization.</p>
   </div>
 </div>
 
 <hr>
 
 <!-- SKILLS -->
-<div class="text-center mt-4">
+<div class="container">
+  <h2 id="skills" class="section-title">SKILLS</h2>
 
-  <p><strong>Languages:</strong> Python, SQL, R</p>
+  <div class="row text-center mt-4 skills-box">
 
-  <p><strong>Data Analysis & Machine Learning:</strong> 
-    Data Cleaning, Exploratory Data Analysis (EDA), Predictive Modeling, Machine Learning, Data Mining
-  </p>
+    <div class="col-md-4">
+      <h5><i class="bi bi-code-slash"></i> Languages</h5>
+      <p>Python, SQL, R</p>
+    </div>
 
-  <p><strong>Libraries & Tools:</strong> 
-    pandas, NumPy, scikit-learn
-  </p>
+    <div class="col-md-4">
+      <h5><i class="bi bi-graph-up"></i> Data & ML</h5>
+      <p>EDA, Machine Learning, Predictive Modeling</p>
+    </div>
 
-  <p><strong>Data Visualization:</strong> 
-    Matplotlib, Seaborn, Power BI / Tableau
-  </p>
+    <div class="col-md-4">
+      <h5><i class="bi bi-bar-chart"></i> Visualization</h5>
+      <p>Matplotlib, Seaborn, Power BI, Tableau</p>
+    </div>
 
-  <p><strong>Databases & Systems:</strong> 
-    Structured Database Design, SQL, Data Management
-  </p>
+    <div class="col-md-6 mt-4">
+      <h5><i class="bi bi-database"></i> Databases</h5>
+      <p>SQL, Database Design, Data Management</p>
+    </div>
 
-  <p><strong>Additional Skills:</strong> 
-    Statistical Analysis, Business Intelligence, Data-Driven Decision Making, Cloud Technologies
-  </p>
+    <div class="col-md-6 mt-4">
+      <h5><i class="bi bi-lightbulb"></i> Other</h5>
+      <p>Statistics, BI, Cloud Basics, Problem Solving</p>
+    </div>
 
+  </div>
+</div>
+
+<hr>
+
+<!-- RESUME -->
+<div class="container text-center mt-5">
+  <h2 class="section-title">RESUME</h2>
+
+  <p>View or download my resume below:</p>
+
+  <a href="resume.pdf" target="_blank" class="btn btn-outline-danger">
+    Open Resume
+  </a>
+
+  <div class="mt-3">
+    <iframe src="resume.pdf" width="100%" height="500px"></iframe>
+  </div>
 </div>
 
 <hr>
@@ -197,7 +239,7 @@ body {
 <div class="container contact text-center mb-5">
   <h2 id="contact" class="section-title">CONTACT</h2>
 
-  <p>Email: <a href="mailto:selam.saleh098@gmail.com">selam.saleh098@email.com</a></p>
+  <p>Email: <a href="mailto:selam.saleh098@gmail.com">selam.saleh098@gmail.com</a></p>
 
   <p>
     <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
