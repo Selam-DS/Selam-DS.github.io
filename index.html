@@ -86,17 +86,31 @@ body {
 }
 
 /* CAROUSEL */
-.carousel-caption {
-  background: rgba(0,0,0,0.6);
-  border-radius: 8px;
-  padding: 8px;
-  font-size: 13px;
+.carousel-inner {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
 }
 
-.carousel img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  max-height: 260px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Caption BELOW image */
+.carousel-caption {
+  position: static;
+  background: none;
+  color: #444;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 /* SKILLS */
