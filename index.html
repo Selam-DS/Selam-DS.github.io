@@ -24,10 +24,20 @@ body {
 }
 
 /* NAVBAR */
+.navbar {
+  padding: 15px 0;
+  z-index: 1000;
+}
+
 .navbar a {
   text-decoration: none;
   color: #ff4d6d;
   font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #d6336c;
 }
 
 /* HERO */
@@ -154,21 +164,28 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+body {
+  padding-top: 80px; /* space for navbar */
+}
 </style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<div class="container navbar mt-4">
-  <div class="row text-center"> 
-  <div class="col"><a href="#about">ABOUT</a></div> 
-  <div class="col"><a href="#projects">PROJECTS</a></div>
-  <div class="col"><a href="#skills">SKILLS</a></div>
-  <div class="col"><a href="#resume">RESUME</a></div>
-  <div class="col"><a href="#contact">CONTACT</a></div> 
+<nav class="navbar fixed-top bg-white shadow-sm">
+  <div class="container-fluid">
+    <div class="row w-100 text-center">
+
+      <div class="col"><a href="#about">ABOUT</a></div>
+      <div class="col"><a href="#projects">PROJECTS</a></div>
+      <div class="col"><a href="#skills">SKILLS</a></div>
+      <div class="col"><a href="#resume">RESUME</a></div>
+      <div class="col"><a href="#contact">CONTACT</a></div>
+
+    </div>
   </div>
-</div>
+</nav>
 
 <!-- HERO -->
 <div class="container hero">
