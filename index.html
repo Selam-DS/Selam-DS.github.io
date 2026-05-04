@@ -146,18 +146,28 @@ body {
 .contact a {
   color: #ff4d6d;
 }
+
+/* --- ADD THIS AT THE END --- */
+#resume + p,
+#resume + p + a {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<div class="row text-center">
-  <div class="col"><a href="#about">ABOUT</a></div>
+<div class="container navbar mt-4">
+  <div class="row text-center"> 
+  <div class="col"><a href="#about">ABOUT</a></div> 
   <div class="col"><a href="#projects">PROJECTS</a></div>
   <div class="col"><a href="#skills">SKILLS</a></div>
   <div class="col"><a href="#resume">RESUME</a></div>
-  <div class="col"><a href="#contact">CONTACT</a></div>
+  <div class="col"><a href="#contact">CONTACT</a></div> 
+  </div>
 </div>
 
 <!-- HERO -->
@@ -360,13 +370,19 @@ body {
 <hr>
 
 <!-- RESUME -->
-<div class="container text-center mt-5">
-  <h2 class="section-title">RESUME</h2>
+<div class="container text-center">
+  <h2 id="resume" class="section-title">RESUME</h2>
 
-  <p>Click below to view my resume:</p>
+  <p class="fs-5 mt-3">
+    View or download my full resume to learn more about my experience, education, and technical skills.
+  </p>
 
-  <a href="Resume.pdf" target="_blank" class="btn btn-outline-danger btn-lg">
-    View Resume
+  <a href="Resume.pdf" target="_blank" class="btn btn-danger btn-lg mt-3 me-2">
+    <i class="bi bi-file-earmark-text"></i> View Resume
+  </a>
+
+  <a href="Resume.pdf" download class="btn btn-outline-danger btn-lg mt-3">
+    <i class="bi bi-download"></i> Download
   </a>
 </div>
 
