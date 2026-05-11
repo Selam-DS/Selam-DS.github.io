@@ -179,77 +179,6 @@ section {
   font-size: 15px;
 }
 
-.project-card {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  margin: 5rem 0;
-  flex-wrap: wrap;
-}
-
-.project-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.project-text h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.project-text p {
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-.project-text ul {
-  margin-bottom: 1.5rem;
-  padding-left: 1.2rem;
-}
-
-.project-text li {
-  margin-bottom: 0.5rem;
-}
-
-.project-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.project-links a {
-  text-decoration: none;
-  padding: 0.8rem 1.4rem;
-  border-radius: 10px;
-  background: #111;
-  color: white;
-  transition: 0.3s ease;
-}
-
-.project-links a:hover {
-  opacity: 0.85;
-}
-
-.carousel-container {
-  flex: 1;
-  min-width: 320px;
-  overflow-x: auto;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 1rem;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel-track img,
-.carousel-track video {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  scroll-snap-align: center;
-}
-
 /* CONTACT */
 .contact a {
   color: #ff4d6d;
@@ -427,46 +356,135 @@ body {
 
     </div>
   </div>
-  <!-- Melanoma Project -->
-<section class="project-card">
-  <div class="project-text">
-    <h2>Melanoma Risk Classification Using Deep Learning and Clinical Metadata</h2>
+<!-- MELANOMA PROJECT -->
+<div class="project">
+  <div class="row align-items-center mt-5">
 
-    <p>
-      Developed a hybrid machine learning pipeline for melanoma risk classification using dermoscopic skin lesion images and clinical metadata.
-      The project combines ResNet18 CNN feature extraction with Logistic Regression optimized for highly imbalanced medical classification.
-    </p>
+    <!-- TEXT -->
+    <div class="col-md-6">
 
-    <ul>
-      <li>Extracted image embeddings using pretrained ResNet18</li>
-      <li>Integrated patient metadata including age, sex, and anatomical site</li>
-      <li>Applied feature selection, scaling, and threshold tuning</li>
-      <li>Evaluated performance using ROC and Precision-Recall analysis</li>
-      <li>Deployed an interactive web app using Gradio and Hugging Face Spaces</li>
-    </ul>
+      <h4>Melanoma Risk Classification Using Deep Learning and Clinical Metadata</h4>
 
-    <div class="project-links">
-      <a href="YOUR_GITHUB_LINK" target="_blank">GitHub Repo</a>
-      <a href="YOUR_HF_SPACE_LINK" target="_blank">Live Demo</a>
+      <p>
+        Developed a hybrid deep learning and machine learning pipeline for melanoma risk classification using dermoscopic images and patient metadata.
+      </p>
+
+      <p>
+        The project combines ResNet18 CNN feature extraction with Logistic Regression optimized for highly imbalanced medical classification problems.
+      </p>
+
+      <p>
+        <strong>Key insight:</strong> Threshold tuning and precision-recall optimization significantly improved melanoma detection performance on minority-class samples.
+      </p>
+
+      <p>
+        <strong>Tech:</strong> Python, PyTorch, Scikit-learn, Gradio, Hugging Face Spaces
+      </p>
+
+      <a href="YOUR_GITHUB_LINK"
+         target="_blank"
+         class="btn btn-outline-danger btn-sm me-2">
+        GitHub
+      </a>
+
+      <a href="YOUR_HF_SPACE_LINK"
+         target="_blank"
+         class="btn btn-danger btn-sm">
+        Live Demo
+      </a>
+
     </div>
-  </div>
 
-  <div class="carousel-container">
-    <div class="carousel-track">
+    <!-- CAROUSEL -->
+    <div class="col-md-6">
 
-      <video controls autoplay muted loop>
-        <source src="images/melanoma-demo.mp4" type="video/mp4">
-      </video>
+      <div id="melanomaCarousel"
+           class="carousel slide"
+           data-bs-ride="carousel">
 
-      <img src="images/melanoma-pipeline-diagram.png" alt="Pipeline Diagram">
+        <div class="carousel-inner shadow">
 
-      <img src="images/melanoma-roc-curve.png" alt="ROC Curve">
+          <!-- VIDEO -->
+          <div class="carousel-item active">
 
-      <img src="images/melanoma-confusion-matrix.png" alt="Confusion Matrix">
+            <video class="d-block w-100 rounded"
+                   autoplay
+                   muted
+                   loop
+                   controls>
+              <source src="images/melanoma-demo.mp4"
+                      type="video/mp4">
+            </video>
+
+            <div class="carousel-caption">
+              Interactive melanoma risk assessment demo
+            </div>
+
+          </div>
+
+          <!-- PIPELINE -->
+          <div class="carousel-item">
+
+            <img src="images/melanoma-pipeline-diagram.png"
+                 class="d-block w-100">
+
+            <div class="carousel-caption">
+              End-to-end deep learning pipeline
+            </div>
+
+          </div>
+
+          <!-- ROC -->
+          <div class="carousel-item">
+
+            <img src="images/melanoma-roc-curve.png"
+                 class="d-block w-100">
+
+            <div class="carousel-caption">
+              ROC curve showing strong classification performance
+            </div>
+
+          </div>
+
+          <!-- CONFUSION MATRIX -->
+          <div class="carousel-item">
+
+            <img src="images/melanoma-confusion-matrix.png"
+                 class="d-block w-100">
+
+            <div class="carousel-caption">
+              Confusion matrix evaluation
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#melanomaCarousel"
+                data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#melanomaCarousel"
+                data-bs-slide="next">
+
+          <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+      </div>
 
     </div>
+
   </div>
-</section>
+</div>
 
 <hr>
   
